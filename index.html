@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<style>
+
+</style>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Slot machine game">
+	<meta name="keywords" content="slot machine, casino, html5, indie, browser-based, javascript, arcade, retro, oldschool">
+	<title>Slot Gaming</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	
+</head>
+<body onload="myFunction()" style="margin:0; ">
+<h1 align="center"> Slot</h1>
+ <div id="loader">
+</div>
+<script>
+var myVar;
+function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+}
+function showPage() {
+	document.getElementById("loader").style.visibility = "hidden";  
+	document.getElementById("stage").style.visibility = "visible";
+}
+</script>
+	<div id="stage"  width="800" height="600" align="center"; style="width:100%; visibility:hidden;">
+    </div>
+	
+	<script src="js/application.js"></script>
+</body>
+</html>
